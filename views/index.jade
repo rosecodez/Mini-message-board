@@ -8,3 +8,10 @@ block content
       li
         each value, key in message
           p= key + ': ' + value + ' '
+  
+  button(onClick='openForm()') new
+
+  script.
+    function openForm() {
+      window.location.href = '/new'
+    }
