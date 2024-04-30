@@ -1,0 +1,10 @@
+extends layout
+block content
+    h1 #{title}
+    form(action="/new", method="post")
+        p Author's name
+        input(type="text", name="messageUser", placeholder='Name')
+        p Text
+        input(type="text", name="messageText", placeholder = 'Text')
+        br
+        input(type="submit", value="Submit")
